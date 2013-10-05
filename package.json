@@ -1,0 +1,30 @@
+{
+  "name": "plusone-nodejitsu",
+  "version": "0.1.0",
+  "description": "Creates and destroys temporary nodejitsu apps",
+  "author": "Jakob Mattsson <jakob.mattsson@gmail.com> (jakobmattsson.se)",
+  "main": "./lib/index.js",
+  "engines": {
+    "node": ">= 0.10 < 0.12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/jakobmattsson/plusone-nodejitsu.git"
+  },
+  "scripts": {
+    "pretest": "coffee -co lib src",
+    "prepublish": "coffee -co lib src",
+    "coverage": "jscov src .cov && JSCOV=.cov mocha --compilers coffee:coffee-script --reporter mocha-term-cov-reporter --recursive spec",
+    "test": "mocha --compilers coffee:coffee-script --recursive spec"
+  },
+  "dependencies": {
+    "nodejitsu-api": "0.5.3",
+    "async": "0.2.9"
+  },
+  "devDependencies": {
+    "coffee-script": "1.4.0",
+    "jscov": "0.2.0",
+    "mocha": "1.7.4",
+    "mocha-term-cov-reporter": "0.1.0"
+  }
+}
