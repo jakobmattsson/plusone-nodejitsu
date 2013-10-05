@@ -18,13 +18,13 @@
     "test": "mocha --compilers coffee:coffee-script --recursive spec"
   },
   "dependencies": {
-    "nodejitsu-api": "0.5.3",
-    "async": "0.2.9"
+    "nodejitsu-api": "^0.5.3",
+    "async": "^0.2.9"
   },
   "devDependencies": {
-    "coffee-script": "1.4.0",
-    "jscov": "0.2.0",
-    "mocha": "1.7.4",
-    "mocha-term-cov-reporter": "0.1.0"
+    "coffee-script": "^1.6.3",
+    "jscov": "^0.5.7",
+    "mocha": "^1.7.4",
+    "mocha-term-cov-reporter": "^0.1.0"
   }
 }
